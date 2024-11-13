@@ -1,0 +1,17 @@
+{
+  "name": "test-msfs-simconnect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "msfs-simconnect-api-wrapper": "^4.6.0",
+    "node-simconnect": "^4.0.0"
+  }
+}
