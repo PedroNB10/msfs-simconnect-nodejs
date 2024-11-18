@@ -26,11 +26,11 @@ async function getAircraftData() {
 
             // Exibe os valores no console
             console.log(`Altitude: ${altitude} pés`);
-            console.log(`Latitude: ${latitude * (180 / Math.PI)}`);
-            console.log(`Longitude: ${longitude * (180 / Math.PI)}`);
+            console.log(`Latitude: ${latitude * (180 / Math.PI)} graus`); // converte de radianos para graus
+            console.log(`Longitude: ${longitude * (180 / Math.PI)} graus`); // converte de radianos para graus
             console.log(`Velocidade: ${speed} nós`);
-            console.log(`Rumo: ${heading * (180 / Math.PI)} graus`); // vem em radianos
-            console.log(`Velocidade Vertical: ${(vspeed / 1.68781) * 100} pés/min\n\n`);
+            console.log(`Rumo: ${heading * (180 / Math.PI)} graus`); // converte de radianos para graus
+            console.log(`Velocidade Vertical: ${vspeed * 60} pés/min\n\n`); // converte de pés/seg para pés/min
 
             // Chama a função novamente após 1 segundo
             setTimeout(updateData, 1000);
